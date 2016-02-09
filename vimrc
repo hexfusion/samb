@@ -30,6 +30,8 @@ set list
 syntax on
 set background=light
 
+set nocompatible
+
 " HTML TIDY
 " highlight html in visual mode then use = to htmltidy
 :vmap ,tidy :!tidy -q -i --show-errors 0<CR>
