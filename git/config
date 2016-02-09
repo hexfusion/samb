@@ -1,0 +1,36 @@
+[user]
+    name = Sam Batschelet
+    email = samb@endpoint.com
+[alias]
+    ci = commit
+    st = status
+    di = diff
+    co = checkout
+    lp = log --graph --decorate
+    stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
+    branches = branch --list
+[pull]
+    rebase = true
+[core]
+    pager = less -R -X -x4
+    excludesfile = ~/.gitignore_global
+[push]
+    default = simple
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
